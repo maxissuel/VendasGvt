@@ -1,9 +1,11 @@
 package com.example.vendasgvt;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class MainActivity extends ActionBarActivity {
@@ -19,6 +21,21 @@ public class MainActivity extends ActionBarActivity {
 		tv = new ConectaLocal(this, "TV");
 		telefonia = new ConectaLocal(this, "TELEFONIA");
 		banda = new ConectaLocal(this, "BANDA");
+		
+		ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.telefonia,android.R.layout.simple_spinner_item);
+		ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.banda,android.R.layout.simple_spinner_item);
+		ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.tv,android.R.layout.simple_spinner_item);
+		
+		spnTel = (Spinner)findViewById(R.id.spnTel);
+		spnTel.setAdapter(adapter1);
+		spnBanda = (Spinner)findViewById(R.id.spnBanda);
+		spnBanda.setAdapter(adapter2);
+		spnTv = (Spinner)findViewById(R.id.spnTv);
+		spnTv.setAdapter(adapter3);
+		
+	}
+	
+	public void atualizaPreco(View view){
 		
 	}
 

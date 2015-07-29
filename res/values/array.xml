@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="telefonia">
+        <item ></item>
+        <item >NA MEDIDA SMART</item>
+        <item >ILIMITADO LOCAL SMART</item>
+        <item >ILIMITADO TOTAL SMART</item>
+    </string-array>
+    
+    <string-array name="banda">
+        <item ></item>
+        <item >5</item>
+        <item >10</item>
+        <item >15</item>
+        <item >25</item>
+        <item >35</item>
+        <item >50</item>
+        <item >150</item>
+    </string-array>
+    
+    <string-array name="tv">
+        <item ></item>
+        <item >SUPER HD</item>
+        <item >ULTRA HD</item>
+        <item >ULTIMATE HD</item>
+    </string-array>
+</resources>

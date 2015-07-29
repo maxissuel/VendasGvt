@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-	private static String DBPATH = "/data/data/com.solucaoSistemas.VendasGvt/databases/";
+	private static String DBPATH = "/data/data/com.example.vendasgvt/databases/";
 	private static String DBNAME = "VendasGvt.sqlite";
 	private Context context;
 	
