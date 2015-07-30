@@ -1,3 +1,5 @@
+/**@author maxissuel
+ * */
 package com.example.vendasgvt;
 import java.io.*;
 import android.content.*;

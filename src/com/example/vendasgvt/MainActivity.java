@@ -1,3 +1,5 @@
+/**@author maxissuel
+ * */
 package com.example.vendasgvt;
 
 import android.os.Bundle;
@@ -5,22 +7,27 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 	
 	ConectaLocal tv, telefonia, banda;
 	Spinner spnTv, spnBanda, spnTel;
+	TextView txtvalor1, txtvalor2, txtvalor3;
+	CheckBox check1,check2,check3,check4,check5,check6;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		tv = new ConectaLocal(this, "TV");
-		telefonia = new ConectaLocal(this, "TELEFONIA");
-		banda = new ConectaLocal(this, "BANDA");
+//		tv = new ConectaLocal(this, "TV");
+//		telefonia = new ConectaLocal(this, "TELEFONIA");
+//		banda = new ConectaLocal(this, "BANDA");
 		
 		ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this, R.array.telefonia,android.R.layout.simple_spinner_item);
 		ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.banda,android.R.layout.simple_spinner_item);
@@ -33,10 +40,66 @@ public class MainActivity extends ActionBarActivity {
 		spnTv = (Spinner)findViewById(R.id.spnTv);
 		spnTv.setAdapter(adapter3);
 		
+		txtvalor1 = (TextView)findViewById(R.id.txtvalor1);
+		
+		check1 = (CheckBox)findViewById(R.id.checkBox1);
+		check1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				atualizaPreco();
+				
+			}
+		});
+		check2 = (CheckBox)findViewById(R.id.checkBox2);
+		check2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				atualizaPreco();
+				
+			}
+		});
+		check3 = (CheckBox)findViewById(R.id.checkBox3);
+		check3.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				atualizaPreco();
+				
+			}
+		});
+		check4 = (CheckBox)findViewById(R.id.checkBox4);
+		check4.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				atualizaPreco();
+				
+			}
+		});
+		check5 = (CheckBox)findViewById(R.id.checkBox5);
+		check5.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				atualizaPreco();
+				
+			}
+		});
+		check6 = (CheckBox)findViewById(R.id.checkBox6);
+		check6.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				atualizaPreco();
+				
+			}
+		});
 	}
 	
-	public void atualizaPreco(View view){
-		
+	public void atualizaPreco(){
+		txtvalor1.setText("123");
 	}
 
 	@Override

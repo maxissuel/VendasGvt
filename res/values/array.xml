@@ -9,13 +9,13 @@
     
     <string-array name="banda">
         <item ></item>
-        <item >5</item>
-        <item >10</item>
-        <item >15</item>
-        <item >25</item>
-        <item >35</item>
-        <item >50</item>
-        <item >150</item>
+        <item >5mb</item>
+        <item >10mb</item>
+        <item >15mb</item>
+        <item >25mb</item>
+        <item >35mb</item>
+        <item >50mb</item>
+        <item >150mb</item>
     </string-array>
     
     <string-array name="tv">
